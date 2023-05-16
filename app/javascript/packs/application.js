@@ -14,3 +14,4 @@ import 'swiper/swiper-bundle.css';
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+

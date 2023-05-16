@@ -1,14 +1,62 @@
 <div class="lot">
   <h1>ガチャくじ</h1>
   <h4><%= image_tag "gachagacha.png", size: '400x400' %></h4>
-  <button class="omikuji_btn">くじを引く</button>
-  <p class="omikuji_text"></p>
-  <h3 class="omikuji_name"></h3>
+  <button class="kuji_btn">くじを引く</button>
+  <p class="kuji_text"></p>
+  <h3 class="kuji_name"></h3>
 </div>
 
-<div class="kuji">大吉</div>
-<div class="kuji">小吉</div>
-<div class="kuji">中吉</div>
-<div class="kuji">末吉</div>
-<div class="kuji">凶</div>
-<div class="kuji">大凶</div>
+<!--<div class="kuji">大吉</div>-->
+<!--<div class="kuji">小吉</div>-->
+<!--<div class="kuji">中吉</div>-->
+<!--<div class="kuji">末吉</div>-->
+<!--<div class="kuji">凶</div>-->
+<!--<div class="kuji">大凶</div>-->
+
+<!--<script>-->
+<!--var random = Math.floor(Math.random() * $('.kuji').length);-->
+<!--$('.kuji').hide().eq(random).show();-->
+<!--</script>-->
+
+
+<script>
+
+
+  $(function() {
+ function kuji() {
+  const cont = Math.ceil(Math.random()*5);
+  if(cont == 1){
+    $(".kuji_name").html("大吉が出ました");
+    $(".kuji_text").html("大吉が出ました！おめでとうございます！今日は一日いい日になりそう");
+
+}
+    if(cont == 2){
+    $(".kuji_name").html("中吉が出ました");
+    $(".kuji_text").html("中吉が出ました！悩みが解決する予感！？");
+
+}
+    if(cont == 3){
+    $(".kuji_name").html("小吉が出ました");
+    $(".kuji_text").html("小吉が出ました！食べすぎ注意！！");
+
+}
+
+    if(cont == 4){
+    $(".kuji_name").html("凶が出ました");
+    $(".kuji_text").html("凶が出ました！何事も焦らず取り組めば大丈夫！");
+
+}
+
+    if(cont == 5){
+    $(".kuji_name").html("大凶が出ました");
+    $(".kuji_text").html("大凶が出ました！背後に注意！");
+
+}
+ }
+
+
+    $(".kuji_btn").on("click",function () {
+        kuji();
+    });
+    });
+</script>

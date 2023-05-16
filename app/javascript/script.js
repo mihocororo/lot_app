@@ -1,11 +1,11 @@
-$(function() {
+
 
   // 画像をクリックしたら発動
-  $('div.kuji_btn').on('click', function() {
-var random = Math.floor(Math.random() * $('.kuji').length);
-$('.kuji').hide().eq(random).show();
-});
-});
+  // $('div.kuji_btn').on('click', function() {
+// var random = Math.floor(Math.random() * $('.kuji').length);
+// $('.kuji').hide().eq(random).show();
+// });
+
     // Swiperのオプションを定数化
 const opt = {
   loop: true,
