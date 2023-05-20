@@ -1,2 +1,13 @@
 <h3><%=link_to "TOP","/" %></h3>
-<h4><%= image_tag "roulette.PNG", size: '400x400' %></h4>
+
+<h4 class="roulette"><%= image_tag "roulette.PNG", size: '400x400' %></h4>
+<button class="start_btn">ルーレットを回す</button>
+
+
+<script>
+  $(function(){
+    $("start_btn").on("click", function(){
+  $(".roulette").css( { transform: "rotate(0deg)" } );
+});
+});
+</script>
