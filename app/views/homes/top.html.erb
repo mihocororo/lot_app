@@ -5,13 +5,40 @@
     <meta charset="UTF-8"　/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
-  <body>
-    <h1>くじ引きサイト</h1>
-    <h3>
-    <%= image_tag "gachagacha.png", size: '200x200' %><%=link_to "ガチャくじ", "/gatya" %>
-    <%= image_tag "roulette.PNG", size: '200x200' %><%=link_to "ルーレットくじ","/roulette" %>
-    </h3>
-    <h4></h4>
+
+  <div class="wrap">
+      <ul id="tab-menu">
+        <li><a href="#tab1" class="active"></a>タイトル</li>
+        <li><a href="#tab2" class="">ガチャくじ</a></li>
+        <li><a href="#tab3" class="">ルーレットくじ</a></li>
+        <li><a href="#tab4" class="">TAB4</a></li>
+      </ul>
+      <div id="tab-contents">
+        <div id="tab1" class="tab">
+          <h3>くじ引きサイト</h3>
+        </div>
+
+        <div id="tab2" class="tab">
+          <%= image_tag "gachagacha.png", size: '200x200' %><%=link_to "ガチャくじ", "/gatya" %>
+        </div>
+
+        <div id="tab3" class="tab">
+          <%= image_tag "roulette.PNG", size: '200x200' %><%=link_to "ルーレットくじ","/roulette" %>
+        </div>
+
+        <div id="tab4" class="tab">
+          <p>TAB4のテキストが入ります。TAB4のテキストが入ります。TAB4のテキストが入ります。TAB4のテキストが入ります。</p>
+        </div>
+      </div>
+    </div>
+
+  <!--<body>-->
+  <!--  <h1>くじ引きサイト</h1>-->
+  <!--  <h3>-->
+  <!--  <%= image_tag "gachagacha.png", size: '200x200' %><%=link_to "ガチャくじ", "/gatya" %>-->
+  <!--  <%= image_tag "roulette.PNG", size: '200x200' %><%=link_to "ルーレットくじ","/roulette" %>-->
+  <!--  </h3>-->
+  <!--  <h4></h4>-->
 
 
     <div class="box"></div>
@@ -23,6 +50,8 @@
         <%= image_tag "arrow.png" %>
       </a>
     </span>
+
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
