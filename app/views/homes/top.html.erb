@@ -1,4 +1,30 @@
-<h1>くじ引きサイト</h1>
-<h3><%= image_tag "gachagacha.png", size: '200x200' %><%=link_to "ガチャくじ", "/gatya" %></h3>
-<h3><%= image_tag "roulette.PNG", size: '200x200' %><%=link_to "ルーレットくじ","/roulette" %></h3>
-<h4></h4>
+
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+    <meta charset="UTF-8"　/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <body>
+    <h1>くじ引きサイト</h1>
+    <h3>
+    <%= image_tag "gachagacha.png", size: '200x200' %><%=link_to "ガチャくじ", "/gatya" %>
+    <%= image_tag "roulette.PNG", size: '200x200' %><%=link_to "ルーレットくじ","/roulette" %>
+    </h3>
+    <h4></h4>
+
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <span id="back">
+      <a href="#">
+        <%= image_tag "arrow.png" %>
+      </a>
+    </span>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

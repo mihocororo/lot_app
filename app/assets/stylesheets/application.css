@@ -13,6 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .lot{
   text-align: center;
 }
@@ -21,3 +28,65 @@
 /*  transform: rotate(360deg);*/
 /*  transition: transform 2s;*/
 /*}*/
+
+/*トップページ・上に戻るボタン*/
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+.box {
+  height: 300px;
+  width: 600px;
+  margin: 0 auto 50px;
+  background-color: #eee;
+}
+#back {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#back img {
+  width: 50px;
+}
+
+body{
+  text-align: center;
+}
+
+
+
+
+.rotate {
+  animation: rotate-anime 0.4s linear infinite;
+}
+@keyframes rotate-anime {
+  0%    { transform: rotate(0); }
+  100%  { transform: rotate(360deg); }
+}
+
+#pointer{
+  font-size: xx-large;
+}
+
+.stop {
+  animation-play-state: paused;
+
+}
+
+/*.button{*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+#stop{
+  width: 100px;
+  height: 50px;
+}
+
+#start{
+  width: 100px;
+  height: 50px;
+}
+
+#reset{
+  width: 100px;
+  height: 50px;
+}
