@@ -79,3 +79,8 @@ $(function(){
     });
   });
 });
+
+
+$('#walk').animate({
+  "marginLeft": "100px"
+});
