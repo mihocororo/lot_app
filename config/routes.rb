@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'weathers/index'
+  get 'weather'=>'weathers#index'
   get 'roulette'=>'fortunes#roulette'
   get 'gatya'=>'fortunes#gatya'
   # get 'homes/top'
