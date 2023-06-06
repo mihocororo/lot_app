@@ -1,0 +1,67 @@
+<h3><%=link_to "TOP","/" %></h3>
+<h1>ねこ占い</h1>
+<h3>好きな猫をクリックしてね</h3>
+<button class ="cat_btn">
+  <%= image_tag "cat.png", size: '50x50' %></button>
+<button class ="cat_btn">
+  <%= image_tag "cat.png", size: '50x50' %></button>
+<button class ="cat_btn">
+  <%= image_tag "cat.png", size: '50x50' %></button>
+<button class ="cat_btn">
+  <%= image_tag "cat.png", size: '50x50' %></button>
+<button class ="cat_btn">
+  <%= image_tag "cat.png", size: '50x50' %></button>
+<button class ="cat_btn">
+  <%= image_tag "cat.png", size: '50x50' %></button>
+<button class ="cat_btn">
+  <%= image_tag "cat.png", size: '50x50' %></button>
+<button class ="cat_btn">
+  <%= image_tag "cat.png", size: '50x50' %></button>
+
+<h3 class="cat_name"></h3>
+
+
+  <script>
+
+     $(function() {
+      function catkuji() {
+          const cont = Math.ceil(Math.random()*7);
+
+          if(cont == 1){
+            $(".cat_name").html("1猫get!!");
+          }
+
+          if(cont == 2){
+            $(".cat_name").html("2猫get!!");
+          }
+
+          if(cont == 3){
+            $(".cat_name").html("3猫get!!");
+          }
+
+          if(cont == 4){
+            $(".cat_name").html("4猫get!!");
+          }
+
+          if(cont == 5){
+            $(".cat_name").html("5猫get!!");
+          }
+
+          if(cont == 6){
+            $(".cat_name").html("6猫get!!");
+          }
+
+          if(cont == 7){
+            $(".cat_name").html("7猫get!!");
+          }
+      }
+
+      $(".cat_btn").on("click",function() {
+        catkuji();
+
+  })
+
+
+    });
+
+  </script>

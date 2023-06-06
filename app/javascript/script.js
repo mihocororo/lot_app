@@ -48,6 +48,7 @@ $('#tab-menu a').on('click', function(event) {
 });
 
 
+// お天気
 // （API_KEY には、"取得したAPIキー" を記述）
 const API_KEY = "314821146a59f73dd669c2aff523e59a";
 
@@ -81,6 +82,35 @@ $(function(){
 });
 
 
-$('#walk').animate({
-  "marginLeft": "100px"
-});
+// 猫占い
+  // $(function() {
+  //     function catkuji() {
+  //         const cont = Math.ceil(Math.random()*7);
+  //         if(cont == 1){
+  //           $(".cat_name").html("1猫get!!");
+  //         }
+  //         if(cont == 2){
+  //           $(".cat_name").html("2猫get!!");
+  //         }
+  //         if(cont == 3){
+  //           $(".cat_name").html("3猫get!!");
+  //         }
+  //         if(cont == 4){
+  //           $(".cat_name").html("4猫get!!");
+  //         }
+  //         if(cont == 5){
+  //           $(".cat_name").html("5猫get!!");
+  //         }
+  //         if(cont == 6){
+  //           $(".cat_name").html("6猫get!!");
+  //         }
+  //         if(cont == 7){
+  //           $(".cat_name").html("7猫get!!");
+  //         }
+  //     }
+  // })
+
+  //   $("cat_btn").on("click",function() {
+  //       catkuji();
+  //   });
+
