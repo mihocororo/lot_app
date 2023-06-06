@@ -157,3 +157,38 @@ body{
 
 }
 
+/*カラーページ*/
+.box {
+    height: 800px;
+    display: none;
+}
+
+.area1 {
+ background: red;
+}
+
+.area2 {
+ background: black;
+}
+
+.area3 {
+ background: green;
+}
+.area4 {
+ background: blue;
+}
+
+.area5 {
+ background: yellow;
+}
+
+.area6 {
+ background: pink;
+}
+
+p {
+    font-size: 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+

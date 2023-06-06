@@ -82,35 +82,22 @@ $(function(){
 });
 
 
-// 猫占い
-  // $(function() {
-  //     function catkuji() {
-  //         const cont = Math.ceil(Math.random()*7);
-  //         if(cont == 1){
-  //           $(".cat_name").html("1猫get!!");
-  //         }
-  //         if(cont == 2){
-  //           $(".cat_name").html("2猫get!!");
-  //         }
-  //         if(cont == 3){
-  //           $(".cat_name").html("3猫get!!");
-  //         }
-  //         if(cont == 4){
-  //           $(".cat_name").html("4猫get!!");
-  //         }
-  //         if(cont == 5){
-  //           $(".cat_name").html("5猫get!!");
-  //         }
-  //         if(cont == 6){
-  //           $(".cat_name").html("6猫get!!");
-  //         }
-  //         if(cont == 7){
-  //           $(".cat_name").html("7猫get!!");
-  //         }
-  //     }
-  // })
+$(function(){
+    var boxArea = $('.box'),
+    show = 150;
 
-  //   $("cat_btn").on("click",function() {
-  //       catkuji();
-  //   });
+    boxArea.css({display:'block',opacity:'0'});
 
+    $(window).on('scroll',function(){
+        boxArea.each(function(){
+            var set = $(this),
+            areaTop = set.offset().top;
+
+            if ($(window).scrollTop() >= (areaTop + show) - $(window).height()){
+                set.stop().animate({opacity:'1'},300);
+            } else {
+                set.stop().animate({opacity:'0'},300);
+            }
+        });
+    });
+});
