@@ -101,3 +101,41 @@ $(function(){
         });
     });
 });
+
+
+$(function() {
+  var width = $(window).width();
+  $(".demo").css({height: width / 4.5});
+  $(window).on("resize", function() {
+    width = $(window).width();
+    $(".demo").css({height: width / 1.5});
+  });
+  var num = 0;
+  var img = $(".demo img");
+  var max = 8;
+  var speed = 150;
+  // 歩いているアニメ
+  setInterval(function() {
+    num++
+    img.attr({src: 'img/' + num + '.png'});
+    if(num == max) {num = 0;}
+  }, speed);
+
+  // カーソルで移動
+  var len = 0;
+  $(window).on('mousemove', function(e) {
+    width = $(window).width();
+    if(e.clientX / width * 100 < len ){
+      // 体の向きを左へ
+      img.css({transform: "translateX(-50%) scale(-1, 1)"});
+    }else{
+      // 体の向きを右へ
+      img.css({transform: "translateX(-50%)"});
+    }
+    len = e.clientX / width * 100;
+    if(len <= 100 && len >= 0) {
+      // 0% ~ 100%までは移動可能
+      $(".demo span, .demo img").css({left: len + "%"});
+    }
+  });
+});
