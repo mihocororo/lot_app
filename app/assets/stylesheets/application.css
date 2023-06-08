@@ -169,6 +169,7 @@ body{
 
 .area2 {
  background: black;
+ color: white;
 }
 
 .area3 {
@@ -193,30 +194,78 @@ p {
 }
 
 /*歩く人*/
-.demo {
-  position: relative;
-  width: 76%;
-  height: 200px;
-  display: block;
-  margin: 0 auto;
-  border: 2px solid #3e3e3e;
-  border-radius: 12px;
+/*.demo {*/
+/*  position: relative;*/
+/*  width: 76%;*/
+/*  height: 200px;*/
+/*  display: block;*/
+/*  margin: 0 auto;*/
+/*  border: 2px solid #3e3e3e;*/
+/*  border-radius: 12px;*/
+/*}*/
+/*.demo span {*/
+/*  position: absolute;*/
+/*  bottom: -13%;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*  width: 27%;*/
+/*  height: 20px;*/
+/*  display: block;*/
+/*  background: rgba(0, 0, 0, 0.1);*/
+/*  border-radius: 50%;*/
+/*}*/
+/*.demo img {*/
+/*  position: absolute;*/
+/*  bottom: -14%;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*  width: 32%;*/
+/*}*/
+
+.c_box{
+  margin:50px;
+  padding-left: 150px;
+  display: flex;
 }
-.demo span {
-  position: absolute;
-  bottom: -13%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 27%;
-  height: 20px;
-  display: block;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+
+.box1{
+  margin-left:50px;
+  width: 100px;
+  height: 100px;
+  background-color:red;
 }
-.demo img {
-  position: absolute;
-  bottom: -14%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 32%;
+
+.box2{
+  margin-left:25px;
+  width: 100px;
+  height: 100px;
+  background-color:black;
+}
+
+.box3{
+  margin-left:25px;
+  width: 100px;
+  height: 100px;
+  background-color:green;
+}
+
+.box4{
+  margin-left:25px;
+  width: 100px;
+  height: 100px;
+  background-color:blue;
+}
+
+.box5{
+  margin-left:25px;
+  width: 100px;
+  height: 100px;
+  background-color:yellow;
+}
+
+.box6{
+  margin-left:25px;
+  width: 100px;
+  height: 100px;
+  background-color:pink;
 }
