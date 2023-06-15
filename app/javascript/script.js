@@ -199,3 +199,20 @@ $(function(){
       stop_button.prop("disabled", true);
     });
 });
+
+// シャッフル
+$(function(){
+ console.log("tamaki")
+    var card = document.getElementById('card');
+    card.addEventListener('click', function() {
+      turnover();
+    });
+
+    function turnover() {
+      if(card.className = card.className === ''){
+        card.className = 'mekuru';
+      }else{
+        card.className = '';
+      }
+    }
+})
