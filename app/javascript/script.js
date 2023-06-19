@@ -202,7 +202,7 @@ $(function(){
 
 // シャッフル
 $(function(){
- console.log("tamaki")
+ console.log("shuffle")
     var card = document.getElementById('card');
     card.addEventListener('click', function() {
       turnover();
