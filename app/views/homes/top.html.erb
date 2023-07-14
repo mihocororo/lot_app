@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
 
+<!--走る猫-->
+    <div class ="cat"><%= image_tag "cat.png", size: '50x50' %><%=link_to image_tag("cat.png", size: '100x100'),"/cat" %></div>
+    <div class ="anime_box"></div>
 
+<!--タイトル下部分  -->
       <div id="tab-contents">
+
         <% if user_signed_in? %>
-        <div class ="cat"><%= image_tag "cat.png", size: '50x50' %><%=link_to image_tag("cat.png", size: '100x100'),"/cat" %></div>
-          <div class ="anime_box"></div>
         <div id="tab2" class="tab">
           <%= image_tag "gachagacha.png", size: '200x200' %><%=link_to "ガチャくじ", "/gatya" %>
         </div>
@@ -26,6 +29,11 @@
         <div id="tab5" class="tab">
           <%= image_tag "gachagacha.png", size: '200x200' %><%=link_to "タロットくじ", "/shuffle" %>
         </div>
+
+        <div id="tab6" class="tab">
+          <a>猫占いを探してみてね</a>
+        </div>
+
 
         </div>
         <% else %>
@@ -46,10 +54,6 @@
   <!--  </h3>-->
   <!--  <h4></h4>-->
 
-
-    <!--<div class="box"></div>-->
-    <!--<div class="box"></div>-->
-    <!--<div class="box"></div>-->
 
     <span id="back">
       <a href="#">
